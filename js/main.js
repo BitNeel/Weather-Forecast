@@ -122,7 +122,7 @@ fetch('../city_coordinates.json')
 
 async function callWeatherAPI(coordinates){
     let [lat,long] = coordinates;
-    var weatherData = await fetch(`http://www.7timer.info/bin/api.pl?lon=${long}&lat=${lat}&product=civillight&output=json`)
+    var weatherData = await fetch(`https://www.7timer.info/bin/api.pl?lon=${long}&lat=${lat}&product=civillight&output=json`)
     return weatherData;
 }
 
